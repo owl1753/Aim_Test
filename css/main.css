@@ -1,0 +1,28 @@
+body{
+    min-height: 100vh;
+    margin: 0;
+}
+
+.Main{
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.Buttons{
+    display: flex;
+}
+
+.Buttons > a{
+    width: 70px;
+}
+
+.Buttons > a > button{
+    width: 100%;
+}
+
+.Buttons > a:not(:first-child){
+    margin-left: 10%;
+}
