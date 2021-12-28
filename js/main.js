@@ -16,11 +16,13 @@ let clickStartButton = (index) => {
         storage.setItem('D_delay', '1100');
     }
     else if (index == 1){
-        difficulty.G_delay = 700;
-        difficulty.D_delay = 800;
+        storage = window.sessionStorage;
+        storage.setItem('G_delay', '700');
+        storage.setItem('D_delay', '800');
     }
     else if (index == 2){
-        difficulty.G_delay = 500;
-        difficulty.D_delay = 600;
+        storage = window.sessionStorage;
+        storage.setItem('G_delay', '500');
+        storage.setItem('D_delay', '600');
     }
 }
