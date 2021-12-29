@@ -1,6 +1,7 @@
 let G_delay = 0;
 let D_delay = 0;
 let cnt = 0;
+let isClicked = false;
 
 storage = window.sessionStorage;
 G_delay = Number(storage.getItem('G_delay'));
@@ -29,11 +30,19 @@ let makeButton = () => {
     button.style.top = String(top) + "px";
 
     document.body.appendChild(button);
+    isClicked = false;
     setTimeout(removeButton, D_delay);
 };
 
 let addCnt = () => {
-    cnt++;
+    if (isClicked) {
+        console.log("응애")
+        return;
+    }
+    else {
+        isClicked = true;
+        cnt++;
+    }
 };
 
 let endPlay = () => {

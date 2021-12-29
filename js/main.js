@@ -9,20 +9,18 @@ let difficulty = new Difficulty(0, 0);
 
 let clickStartButton = (index) => {
     if (index == 0) {
-        difficulty.G_delay = 1000;
-        difficulty.D_delay = 1100;
         storage = window.sessionStorage;
-        storage.setItem('G_delay', '1000');
-        storage.setItem('D_delay', '1100');
+        storage.setItem('G_delay', '1200');
+        storage.setItem('D_delay', '1000');
     }
     else if (index == 1){
         storage = window.sessionStorage;
-        storage.setItem('G_delay', '700');
+        storage.setItem('G_delay', '1000');
         storage.setItem('D_delay', '800');
     }
     else if (index == 2){
         storage = window.sessionStorage;
-        storage.setItem('G_delay', '500');
+        storage.setItem('G_delay', '800');
         storage.setItem('D_delay', '600');
     }
 }
